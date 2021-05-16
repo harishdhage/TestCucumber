@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="105.688847">
+<testcase classname="Automated End2End test" name="Customer place the order by purchasing the item from online" time="105.688847">
+<failure message="java.util.NoSuchElementException: No value present&#13;&#10;&#9;at java.util.Optional.get(Optional.java:135)&#13;&#10;&#9;at stepDefinations.ConfirmationPageStep.verify_order_details(ConfirmationPageStep.java:22)&#13;&#10;&#9;at ✽.Then verify order details(End2EndTest.feature:12)&#13;&#10;"><![CDATA[Given user is at Home page..................................................passed
+When he searches for "dress"................................................passed
+And choose to buy the first item............................................passed
+And moves the check out from mini cart......................................passed
+And enters the "Lakshay" details in checkout page...........................passed
+And place the order.........................................................passed
+Then verify order details...................................................failed
+
+StackTrace:
+java.util.NoSuchElementException: No value present
+	at java.util.Optional.get(Optional.java:135)
+	at stepDefinations.ConfirmationPageStep.verify_order_details(ConfirmationPageStep.java:22)
+	at ✽.Then verify order details(End2EndTest.feature:12)
+]]></failure>
+</testcase>
+</testsuite>

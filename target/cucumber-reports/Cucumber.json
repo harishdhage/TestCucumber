@@ -1,0 +1,153 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 12741574255,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Customer place the order by purchasing the item from online",
+        "description": "",
+        "id": "automated-end2end-test;customer-place-the-order-by-purchasing-the-item-from-online;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 426435771,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 3168958637,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.AfterSteps()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 12583508544,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is at Home page",
+            "match": {
+              "location": "HomePageStep.user_is_at_Home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6053984025,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "he searches for \"dress\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "dress",
+                  "offset": 17
+                }
+              ],
+              "location": "HomePageStep.he_searches_for_dress(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 24712863031,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "choose to buy the first item",
+            "match": {
+              "location": "ProductListingPageStep.choose_to_buy_the_first_item()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 25100168725,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "moves the check out from mini cart",
+            "match": {
+              "location": "CartPageStep.moves_the_check_out_from_mini_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15688550973,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "enters the \"Lakshay\" details in checkout page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Lakshay",
+                  "offset": 12
+                }
+              ],
+              "location": "CheckoutPageStep.enters_the_details_in_checkout_page(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5058563767,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "place the order",
+            "match": {
+              "location": "CheckoutPageStep.place_the_order()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 154239539,
+              "error_message": "java.util.NoSuchElementException: No value present\r\n\tat java.util.Optional.get(Optional.java:135)\r\n\tat stepDefinations.ConfirmationPageStep.verify_order_details(ConfirmationPageStep.java:22)\r\n\tat ✽.Then verify order details(End2EndTest.feature:12)\r\n",
+              "status": "failed"
+            },
+            "line": 12,
+            "name": "verify order details",
+            "match": {
+              "location": "ConfirmationPageStep.verify_order_details()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Automated End2End test",
+    "description": "Purpose of this feature is to test End 2 End integration",
+    "id": "automated-end2end-test",
+    "keyword": "Feature",
+    "uri": "End2EndTest.feature"
+  }
+]
